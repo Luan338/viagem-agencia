@@ -6,6 +6,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Corinthia&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Dancing+Script&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
 
 header {
   background-color: white;
@@ -96,6 +97,82 @@ main {
 
 .box-img-destinos img {
   width: 100%;
+}
+
+.contain-trip {
+  padding-top: 100px;
+  width: 100%;
+}
+
+.box-title-trip {
+  display: flex;
+  justify-content: center;
+}
+
+.box-title-trip h2 a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Corinthia", cursive;
+  color: #3f3d56;
+  transition: 1s all;
+}
+
+.box-title-trip h2 a:hover {
+  color: #ff496d;
+}
+
+.box-trip {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contain-subtitle {
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  background-color: rgba(107, 98, 255, 0.9);
+  border-radius: 10px;
+  width: 30%;
+  height: 320px;
+}
+
+.contain-subtitle::-webkit-scrollbar {
+  width: 2px;
+}
+
+.contain-subtitle::-webkit-scrollbar-thumb {
+  background-color: #ac95bb;
+}
+
+.contain-subtitle::-webkit-scrollbar-track {
+  background-color: #6c63ff;
+}
+
+.contain-subtitle h3 {
+  margin-top: 30px;
+  margin-left: 10px;
+  color: white;
+  font-size: 1em;
+  font-family: "Dancing Script", cursive;
+}
+
+.box-img-trip {
+  width: 40%;
+}
+
+.img-trip {
+  cursor: pointer;
+  border: 1px solid rgba(107, 98, 255, 0.2);
+  border-radius: 50%;
+  width: 100%;
+}
+
+.img-trip:hover {
+  border: 2px solid rgba(107, 98, 255, 0.2);
+  box-shadow: 1px 1px 1px 1px rgba(107, 98, 255, 0.2);
 }
 
 footer {
@@ -293,6 +370,19 @@ span a {
     height: 200px;
     flex-direction: column;
   }
+
+  .box-trip {
+    flex-direction: column-reverse;
+  }
+
+  .contain-subtitle {
+    margin-top: 60px;
+    width: 70%;
+  }
+
+  .box-img-trip {
+    width: 70%;
+  }
 }
 
 @media (max-width: 420px) {
@@ -313,5 +403,21 @@ span a {
 
   .box-img-destinos {
     width: 70%;
+  }
+}
+
+@media (max-width: 360px) {
+  .box-title-trip h2 {
+    text-align: center;
+  }
+
+  .contain-subtitle h3 {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 250px) {
+  .contain-subtitle h3 {
+    font-size: 0.6em;
   }
 }

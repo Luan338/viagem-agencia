@@ -6,6 +6,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Corinthia&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Corinthia:wght@400;700&family=Dancing+Script&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
 
 header {
   background-color: white;
@@ -77,6 +78,12 @@ footer {
   height: 220px;
 }
 
+span a {
+  text-decoration: none;
+  color: #ff496d;
+  transition: 0.5s all;
+}
+
 .contain-footer {
   padding-top: 5%;
   display: flex;
@@ -113,6 +120,42 @@ footer {
   opacity: 1;
   transition: 5s all;
   transform: translate3d(0, 0, 0);
+}
+
+.box-money {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box-title-money {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+}
+
+.box-title-money h2 {
+  cursor: pointer;
+  font-size: 2em;
+  font-family: "Anton", sans-serif;
+  color: #ff496d;
+  animation: alerta 3s infinite alternate;
+}
+
+@keyframes alerta {
+  from {
+    color: #ff496d;
+  }
+
+  to {
+    color: greenyellow;
+  }
+}
+
+.box-money img {
+  width: 70%;
 }
 
 /* inicio responsivo mobile */
@@ -250,12 +293,37 @@ footer {
   }
 
   footer {
-    height: auto;
+    height: 300px;
   }
 
   .box-socials {
     width: 100%;
     height: 200px;
     flex-direction: column;
+  }
+
+  .box-money {
+    position: static;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .box-title-money {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: static;
+  }
+
+  .box-title-money h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .box-title-money h2 {
+    font-size: 1.6em;
+    text-align: center;
   }
 }
