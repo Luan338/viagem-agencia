@@ -99,9 +99,17 @@ span a {
   text-decoration: none;
   color: #ff496d;
   transition: 0.5s all;
+  animation: alerta 3s infinite alternate;
 }
-span a:hover {
-  color: #3f3d56;
+
+@keyframes alerta {
+  from {
+    color: #ff496d;
+  }
+
+  to {
+    color: #3f3d56;
+  }
 }
 
 .contain {
@@ -488,7 +496,6 @@ footer {
   }
 
   .contain-main {
-    border-radius: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;

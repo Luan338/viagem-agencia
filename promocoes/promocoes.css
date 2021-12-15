@@ -158,6 +158,95 @@ span a {
   width: 70%;
 }
 
+.container-cards {
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 25%;
+  height: 300px;
+  background-color: white;
+  border: 1px solid rgba(107, 98, 255, 0.2);
+}
+
+.box-crist,
+.box-predio,
+.box-praia {
+  padding-top: 10%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box-crist img,
+.box-predio img,
+.box-praia img {
+  width: 40px;
+}
+
+.box-text-1,
+.box-text-2,
+.box-text-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.risk {
+  text-decoration: line-through;
+  color: #ff496d;
+}
+
+.green {
+  color: rgb(19, 250, 19);
+}
+
+.box-text-1 h2,
+.box-text-2 h2,
+.box-text-3 h2 {
+  color: #3f3d56;
+  font-size: 1.6em;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+}
+
+.box-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.box-btn button {
+  text-transform: capitalize;
+  width: 150px;
+  padding: 4%;
+  border-radius: 10px;
+  border: 2px solid #3f3d56;
+  color: #3f3d56;
+  font-size: 1.3em;
+  top: 60%;
+  cursor: pointer;
+  position: relative;
+  font-family: "Open Sans Condensed", sans-serif;
+  transition: 1s all;
+}
+.box-btn button:hover {
+  color: white;
+  border: 1px solid white;
+  transition: 0.5s;
+  background-color: #6b62ff;
+}
+
 /* inicio responsivo mobile */
 @media (max-width: 835px) {
   main {
@@ -319,9 +408,38 @@ span a {
     font-size: 2em;
     text-align: center;
   }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    border-radius: 20px;
+    width: 80%;
+    height: 420px;
+  }
+
+  .container-cards {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    margin-top: 100px;
+  }
+
+  .contain-footer {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 660px) {
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 95%;
+  }
+
   .box-title-money h2 {
     font-size: 1.6em;
     text-align: center;
