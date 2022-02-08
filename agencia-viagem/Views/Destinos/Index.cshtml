@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Destinos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Destinos</h1>
+
+    <table class="table table-striped">
+<thead>
+<tr>
+<th >Id</th>
+<th >Destino</th>
+<th >Endereço de Partida</th>
+<th >Data</th>
+<th >Hora</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td>Rio de Janeiro</td>
+        <td>24-12-2021</td>
+        <td>20</td>
+
+    </tr>
+</tbody>
+</table>
+
+<form action="method">
+    <fieldset>
+        <label>
+            Destino: 
+            <input type="text" name="destino" placeholder="Digite seu destino"/>
+        </label>
+        <label>
+            Endereço atual: 
+            <input type="text" name="endereco" placeholder="Digite seu endereço atual"/>
+        </label>
+        <input type="datetime-local"/>
+    </fieldset>
+</form>
+</div>
